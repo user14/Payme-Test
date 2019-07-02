@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center_vertical"
+    tools:context=".activity.CreateBookActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/idea" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textView_isbn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:text="@string/isbn"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editText_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/isbn"
+            android:padding="8dp"
+            android:textColor="@color/grey" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:text="@string/book_title"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editText_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/book_title"
+            android:padding="8dp"
+            android:textColor="@color/grey" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textView_author"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:text="@string/book_author"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editText_author"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/book_author"
+            android:padding="8dp"
+            android:textColor="@color/grey" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textView_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:text="@string/publisher"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editText_publisher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/publisher"
+            android:padding="8dp"
+            android:textColor="@color/grey" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textView_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:text="@string/cover_image"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editText_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/url"
+            android:padding="8dp"
+            android:textColor="@color/grey" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:enabled="true"
+        android:text="@string/create_book"
+        android:textColor="@color/colorPrimary" />
+
+</TableLayout>
